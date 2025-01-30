@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+.verticleText {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+}
+
+.font-bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-DancingScript {
+  font-family: "Dancing Script", serif;
+}
+
+.font-Montserrat {
+  font-family: "Montserrat", serif;
+}
+
+.font-roboto {
+  font-family: "Roboto Condensed", serif;
+}
