@@ -170,7 +170,7 @@ const MostAttractive = () => {
             data-aos-duration="1000"
           />
 
-          <img
+          {/* <img
             src={bgleft}
             alt="leftImg3"
             className="absolute top-[78%] left-[-120px] w-[430px] h-[430px]"
@@ -179,7 +179,7 @@ const MostAttractive = () => {
             src={bgright}
             alt="leftImg3"
             className="absolute top-[105%] right-[-100px] w-[360px] h-[430px]"
-          />
+          /> */}
         </div>
       </section>
     </section>

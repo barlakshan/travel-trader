@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 import { SliderContext } from "../../context/AppContext";
+import { ArrowLeft, ArrowRight } from "lucide-react"; // Importing arrow icons
 
 // Import required Swiper styles
 import "swiper/css";
@@ -21,18 +22,18 @@ const PosterSlider = () => {
     {
       name: "Yala",
       img: img1,
-      description: "Experience wildlife in its natural habitat"
+      description: "Experience wildlife in its natural habitat",
     },
     {
       name: "Ella",
       img: img2,
-      description: "Scenic mountain views and tea plantations"
+      description: "Scenic mountain views and tea plantations",
     },
     {
       name: "Galle",
       img: img3,
-      description: "Historic fort and colonial architecture"
-    }
+      description: "Historic fort and colonial architecture",
+    },
   ];
 
   const handleSlideChange = (swiper) => {
@@ -41,13 +42,37 @@ const PosterSlider = () => {
 
   useEffect(() => {
     if (swiperRef.current) {
-      const swiper = swiperRef.current.swiper;
-      swiper.on("slideChange", () => handleSlideChange(swiper));
+      swiperRef.current = swiperRef.current.swiper;
+      swiperRef.current.on("slideChange", () => handleSlideChange(swiperRef.current));
     }
-  }, [swiperRef]);
+  }, []);
+
+  const goToPrevSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
+  const goToNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
 
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-4xl mx-auto px-4 relative">
+      <button
+        className="absolute left-90 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition"
+        onClick={goToPrevSlide}
+      >
+        <ArrowLeft className="w-6 h-6 text-gray-700" />
+      </button>
+      <button
+        className="absolute right-90 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition"
+        onClick={goToNextSlide}
+      >
+        <ArrowRight className="w-6 h-6 text-gray-700" />
+      </button>
       <Swiper
         ref={swiperRef}
         effect="coverflow"
