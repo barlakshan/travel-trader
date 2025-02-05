@@ -5,6 +5,7 @@ import Navbar from "../navbar/Navbar";
 import Header from "../header/Header";
 import MostAttractive from "../mostattractive/MostAttractive";
 import ViewPoint from "../viewpoint/ViewPoint";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   const { activeSlideIndex } = useContext(SliderContext);
@@ -23,11 +24,12 @@ const Home = () => {
   const classChange = handleClass(activeSlideIndex);
 
   return (
-    <div className={`min-h-screen overflow-y-auto ${classChange}`}id="home">
+    <div className={`min-h-screen overflow-y-auto ${classChange}`} id="home">
       <Navbar />
       <Header />
       <MostAttractive />
-      <ViewPoint/>
+      <ViewPoint />
+      <Footer />
     </div>
   );
 };

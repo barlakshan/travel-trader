@@ -59,8 +59,8 @@ const ViewPoint = () => {
               key={index}
               onClick={() => handleSelected(index)}
               className={`${
-                state === index ? "bg-[#00a18971]" : "border-transparent"
-              }border-white border-[6px] ml-[-100px] pl-[100px] py-2 z-[99] relative`}
+                state === index ? "bg-[#00a18971]" : "border-white "
+              }border-transparent border-[6px] ml-[-100px] pl-[100px] py-2 z-[99] relative`}
             >
               <div className="text-white flex gap-10">
                 <p className="text-[25px] font-semiBold">2/07</p>

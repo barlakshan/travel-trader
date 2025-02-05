@@ -1,4 +1,6 @@
-.bgContainer1, .bgContainer2, .bgContainer3 {
+.bgContainer1,
+.bgContainer2,
+.bgContainer3 {
   /* height: 100px; */
   min-height: 100vh;
   background-size: cover;
@@ -8,21 +10,22 @@
 }
 
 .bgContainer1 {
-  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("../../assets/bg/bg1.png");
+  background-image: linear-gradient(to top, #001e23, rgba(255, 0, 0, 0)),
+    url("../../assets/bg/bg5.jpg");
 }
 .bgContainer2 {
-  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("../../assets/bg/bg4.jpg");
+  background-image: linear-gradient(to top, #001e23, rgba(255, 0, 0, 0)),
+    url("../../assets/bg/bg3.png");
 }
 .bgContainer3 {
-  background-image: linear-gradient(to top, #001E23, rgba(255, 0, 0, 0)), url("../../assets/bg/sri-lankan-leopard-yala-1536x864.jpg");
+  background-image: linear-gradient(to top, #001e23, rgba(255, 0, 0, 0)),
+    url("../../assets/galle/hikkaduwa.jpg");
 }
 
-
-
-
-
 @media (max-width: 768px) {
-  .bgContainer1, .bgContainer2, .bgContainer3 {
+  .bgContainer1,
+  .bgContainer2,
+  .bgContainer3 {
     background-size: cover;
     height: auto;
   }

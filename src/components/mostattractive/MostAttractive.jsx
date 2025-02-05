@@ -88,16 +88,20 @@ const MostAttractive = () => {
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[#2FA8B9] text-[30px] rotate-[90deg]" />
             <p className="absolute w-[400px] left-[70px] text-white">
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
+              Hambantota, located on Sri Lanka’s southern coast, is a
+              destination rich in natural beauty, wildlife, and cultural
+              heritage. From stunning beaches to national parks, it offers
+              something for every traveler.
             </p>
           </div>
 
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[#2FA8B9] text-[30px] rotate-[90deg]" />
             <p className="absolute w-[400px] left-[70px] text-white">
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
+              Ella, a charming hill town in Sri Lanka, is known for its
+              breathtaking scenery, lush tea plantations, and relaxing
+              atmosphere. It’s a paradise for nature lovers and adventure
+              seekers alike.
             </p>
           </div>
 
@@ -122,16 +126,18 @@ const MostAttractive = () => {
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[#2FA8B9] text-[30px] rotate-[90deg]" />
             <p className="absolute w-[400px] right-[70px] text-white text-right">
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
+              Galle, a historic coastal city in Sri Lanka, is known for its
+              colonial charm, stunning beaches, and cultural heritage. It’s a
+              perfect blend of history and tropical beauty.
             </p>
           </div>
 
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[#2FA8B9] text-[30px] rotate-[90deg]" />
             <p className="absolute w-[400px] right-[70px] text-white text-right">
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
+              The Ruhunu Maha Kataragama Devalaya is a significant religious
+              site, drawing both Hindu and Buddhist pilgrims. The temple’s
+              serene setting makes it a great place for spiritual reflection.
             </p>
           </div>
 
@@ -156,8 +162,10 @@ const MostAttractive = () => {
           <div className="relative flex items-center">
             <BsHexagonFill className="text-[#2FA8B9] text-[30px] rotate-[90deg]" />
             <p className="absolute w-[400px] left-[70px] text-white">
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
-              lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum
+              The Galle Fort, a UNESCO World Heritage Site, is the city’s main
+              attraction. Built by the Portuguese and later fortified by the
+              Dutch, its cobblestone streets, colonial buildings, and ocean
+              views make it a fascinating place to explore.
             </p>
           </div>
 

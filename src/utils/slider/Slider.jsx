@@ -11,8 +11,8 @@ import "swiper/css/effect-coverflow";
 
 // Import images directly
 import img1 from "../../assets/hambantota/yala.webp";
-import img2 from "../../assets/ella/ella.webp";
-import img3 from "../../assets/udawalawe/udawalawe.webp";
+import img2 from "../../assets/ella/ellaimg4.jpg";
+import img3 from "../../assets/galle/gallew.jpg";
 
 const PosterSlider = () => {
   const swiperRef = useRef(null);
@@ -43,7 +43,9 @@ const PosterSlider = () => {
   useEffect(() => {
     if (swiperRef.current) {
       swiperRef.current = swiperRef.current.swiper;
-      swiperRef.current.on("slideChange", () => handleSlideChange(swiperRef.current));
+      swiperRef.current.on("slideChange", () =>
+        handleSlideChange(swiperRef.current)
+      );
     }
   }, []);
 

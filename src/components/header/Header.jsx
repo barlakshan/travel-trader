@@ -10,7 +10,7 @@ const Header = ({
     { tour: "Ella", title: "Explore Ella" },
     { tour: "Udawalawe", title: "Explore Udawalawe National Park" },
   ],
-  selectedTour = "Ella",
+  selectedTour = "Yala",
 }) => {
   const tourContent = useMemo(() => {
     const tourData = connectData.find((item) => item.tour === selectedTour);
@@ -34,12 +34,12 @@ const Header = ({
   }, [connectData, selectedTour]);
 
   return (
-    <div className="flex items-center mt-[40px] flex-col md:flex-row">
+    <div className="flex items-center my-[60px] flex-col md:flex-row">
       <div className="w-full md:w-1/2 px-4 md:px-[140px]">
         {tourContent}
-        <div className="mt-[100px] flex gap-12 flex-wrap justify-center md:justify-start">
+        <div className="my-[30px] flex gap-12 flex-wrap justify-center md:justify-start">
           <button
-            className="border-2 border-[#00A189] text-[20px] px-6 py-2 font-semibold text-white hover:text-[#00A189]"
+            className="border-2 border-[#00A189] rounded-[25px] text-[20px] px-6 py-2 font-semibold text-white hover:text-[#00A189]"
             aria-label="Book this tour"
           >
             Book Now
